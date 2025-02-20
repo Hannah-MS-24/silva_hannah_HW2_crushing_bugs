@@ -24,7 +24,8 @@ function handleDrop(e) {
   e.preventDefault();
   console.log("dropped something on me");
 
-
+  if(!this.hasChildNodes()) //This code will tell you whether or not there is an element in the drop-zone
+  
   this.appendChild(draggedPiece);
 }
 
